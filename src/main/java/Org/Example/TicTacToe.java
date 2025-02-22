@@ -1,6 +1,11 @@
 package Org.Example;
 import java.awt.Point;
 
+
+//Beklager lidt mange kommentarer men gjorde det nemmere for mig selv at forstå koden og hvad der var næste trin.
+
+
+
 public class TicTacToe {
     private final char[][] board; // Selve Boardet
     private final char playerSymbol; // Spiller symbol enten X eller O
@@ -137,7 +142,6 @@ public class TicTacToe {
                 }
             }
         }
-
         return score; // Returnerer den heuristiske score
     }
 
