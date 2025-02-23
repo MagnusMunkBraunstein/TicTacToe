@@ -138,7 +138,7 @@ public class TicTacToe {
                 if (board[i][j] == aiSymbol) {
                     score += fieldValues[i][j]; // Computeren får point for at optage gode felter
                 } else if (board[i][j] == playerSymbol) {
-                    score -= fieldValues[i][j]; // spiller reducere computerens styrke ved at optage gode felter
+                    score -= fieldValues[i][j]; // spiller reducer computerens styrke ved at optage gode felter
                 }
             }
         }

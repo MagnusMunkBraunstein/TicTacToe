@@ -37,7 +37,6 @@ public class TicTacToeGUI {
                 buttons[i][j] = new JButton(" ");
                 buttons[i][j].setFont(new Font("Arial", Font.PLAIN, 40));
 
-                // Fix the unwanted focus border issue on first button
                 buttons[i][j].setFocusPainted(false);
                 buttons[i][j].setContentAreaFilled(false);
 
@@ -48,7 +47,7 @@ public class TicTacToeGUI {
         }
         window.setVisible(true);
 
-        // hvis spilleren vælger "O" laver ai første træk
+        // hvis spilleren vælger "O" laver pc første træk
         if (!playerTurn) {
             aiMove();
         }
@@ -102,11 +101,7 @@ public class TicTacToeGUI {
         return false;
     }
 
-    /**
-     * Prompts the user to select the AI's search depth.
-     * - The depth determines how far ahead AI looks (1-10).
-     * @return The chosen depth.
-     */
+
     private int selectSearchDepth() {
         String input = JOptionPane.showInputDialog("Indtast den søgedybde du vil spille med (1-10):");
         try {
